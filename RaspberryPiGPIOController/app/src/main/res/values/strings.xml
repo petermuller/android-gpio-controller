@@ -2,11 +2,15 @@
 <resources>
 
     <string name="app_name">Raspberry Pi GPIO Controller</string>
+
     <string name="title_section1">Pin Direction</string>
     <string name="title_section2">Output</string>
+    <string name="title_section3">Input Monitor</string>
+
     <string name="address">IP or Web Address</string>
     <string name="port">Port Number</string>
     <string name="connect">Connect!</string>
+
     <string name="p0">Pin 1</string>
     <string name="p1">Pin 2</string>
     <string name="p2">Pin 3</string>
@@ -15,10 +19,11 @@
     <string name="p5">Pin 6</string>
     <string name="p6">Pin 7</string>
     <string name="p7">Pin 8</string>
+
     <string name="dis">Disabled</string>
     <string name="h">High</string>
     <string name="l">Low</string>
-    <string name="title_section3">Input Monitor</string>
+
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 

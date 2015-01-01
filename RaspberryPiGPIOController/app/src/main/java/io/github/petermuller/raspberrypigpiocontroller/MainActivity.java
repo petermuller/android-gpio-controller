@@ -126,7 +126,22 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+            Fragment frag;
+            switch (position){
+                case 0:
+                    frag = new Pins();
+                    break;
+                case 1:
+                    frag = new Output();
+                    break;
+                case 2:
+                    frag = new Input();
+                    break;
+                default:
+                    frag = new Pins();
+                    break;
+            }
+            return frag;
         }
 
         @Override
@@ -179,6 +194,45 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.tabbed_view, container, false);
+            return rootView;
+        }
+    }
+
+    public static class Pins extends Fragment{
+        public Pins() {}
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.pins,
+                    container, false);
+            //TODO Code for setting content on the fly if needed.
+            return rootView;
+        }
+    }
+
+    public static class Input extends Fragment{
+        public Input() {}
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.input_mon,
+                    container, false);
+            //TODO Code for setting content on the fly if needed.
+            return rootView;
+        }
+    }
+
+    public static class Output extends Fragment{
+        public Output() {}
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.output_mon,
+                    container, false);
+            //TODO Code for setting content on the fly if needed.
             return rootView;
         }
     }
