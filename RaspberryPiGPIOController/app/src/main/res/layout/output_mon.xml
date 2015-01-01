@@ -181,7 +181,8 @@
         android:layout_alignLeft="@+id/p7"
         android:layout_alignStart="@+id/p7"
         android:layout_alignRight="@+id/seek6"
-        android:layout_alignEnd="@+id/seek6" />
+        android:layout_alignEnd="@+id/seek6"
+        android:layout_marginBottom="20dp" />
 
     </RelativeLayout>
 </ScrollView>

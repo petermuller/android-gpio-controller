@@ -25,7 +25,9 @@
         android:id="@+id/switch0"
         android:layout_below="@+id/p0"
         android:layout_alignLeft="@+id/p0"
-        android:layout_alignStart="@+id/p0" />
+        android:layout_alignStart="@+id/p0"
+        android:textOn="@string/out"
+        android:textOff="@string/in" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,7 +46,9 @@
         android:id="@+id/switch1"
         android:layout_below="@+id/p1"
         android:layout_alignLeft="@+id/p1"
-        android:layout_alignStart="@+id/p1" />
+        android:layout_alignStart="@+id/p1"
+        android:textOn="@string/out"
+        android:textOff="@string/in" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -63,7 +67,9 @@
         android:id="@+id/switch2"
         android:layout_below="@+id/p2"
         android:layout_alignLeft="@+id/p2"
-        android:layout_alignStart="@+id/p2" />
+        android:layout_alignStart="@+id/p2"
+        android:textOn="@string/out"
+        android:textOff="@string/in" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -82,7 +88,9 @@
         android:id="@+id/switch3"
         android:layout_below="@+id/p3"
         android:layout_alignLeft="@+id/p3"
-        android:layout_alignStart="@+id/p3" />
+        android:layout_alignStart="@+id/p3"
+        android:textOn="@string/out"
+        android:textOff="@string/in" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -101,7 +109,9 @@
         android:id="@+id/switch4"
         android:layout_below="@+id/p4"
         android:layout_alignLeft="@+id/p4"
-        android:layout_alignStart="@+id/p4" />
+        android:layout_alignStart="@+id/p4"
+        android:textOn="@string/out"
+        android:textOff="@string/in" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -120,7 +130,9 @@
         android:id="@+id/switch5"
         android:layout_below="@+id/p5"
         android:layout_alignLeft="@+id/p5"
-        android:layout_alignStart="@+id/p5" />
+        android:layout_alignStart="@+id/p5"
+        android:textOn="@string/out"
+        android:textOff="@string/in" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -139,7 +151,9 @@
         android:id="@+id/switch6"
         android:layout_below="@+id/p6"
         android:layout_alignLeft="@+id/p6"
-        android:layout_alignStart="@+id/p6" />
+        android:layout_alignStart="@+id/p6"
+        android:textOn="@string/out"
+        android:textOff="@string/in" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -158,7 +172,10 @@
         android:id="@+id/switch7"
         android:layout_below="@+id/p7"
         android:layout_alignLeft="@+id/p7"
-        android:layout_alignStart="@+id/p7" />
+        android:layout_alignStart="@+id/p7"
+        android:textOn="@string/out"
+        android:textOff="@string/in"
+        android:layout_marginBottom="20dp" />
 
     </RelativeLayout>
 </ScrollView>

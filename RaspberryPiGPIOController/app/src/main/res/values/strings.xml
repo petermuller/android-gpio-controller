@@ -23,6 +23,8 @@
     <string name="dis">Disabled</string>
     <string name="h">High</string>
     <string name="l">Low</string>
+    <string name="in">Input</string>
+    <string name="out">Output</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
