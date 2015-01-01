@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/p0"
+        android:id="@+id/p0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="41dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch0"
+        android:layout_below="@+id/p0"
+        android:layout_alignLeft="@+id/p0"
+        android:layout_alignStart="@+id/p0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/p1"
+        android:id="@+id/p1"
+        android:layout_below="@+id/switch0"
+        android:layout_alignLeft="@+id/switch0"
+        android:layout_alignStart="@+id/switch0"
+        android:layout_marginTop="20dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1"
+        android:layout_below="@+id/p1"
+        android:layout_alignLeft="@+id/p1"
+        android:layout_alignStart="@+id/p1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/p2"
+        android:id="@+id/p2"
+        android:layout_below="@+id/switch1"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_marginTop="20dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch2"
+        android:layout_below="@+id/p2"
+        android:layout_alignLeft="@+id/p2"
+        android:layout_alignStart="@+id/p2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/p3"
+        android:id="@+id/p3"
+        android:layout_below="@+id/switch2"
+        android:layout_alignLeft="@+id/switch2"
+        android:layout_alignStart="@+id/switch2"
+        android:layout_marginTop="20dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch3"
+        android:layout_below="@+id/p3"
+        android:layout_alignLeft="@+id/p3"
+        android:layout_alignStart="@+id/p3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/p4"
+        android:id="@+id/p4"
+        android:layout_below="@+id/switch3"
+        android:layout_alignLeft="@+id/switch3"
+        android:layout_alignStart="@+id/switch3"
+        android:layout_marginTop="20dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch4"
+        android:layout_below="@+id/p4"
+        android:layout_alignLeft="@+id/p4"
+        android:layout_alignStart="@+id/p4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/p5"
+        android:id="@+id/p5"
+        android:layout_below="@+id/switch4"
+        android:layout_alignLeft="@+id/switch4"
+        android:layout_alignStart="@+id/switch4"
+        android:layout_marginTop="20dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch5"
+        android:layout_below="@+id/p5"
+        android:layout_alignLeft="@+id/p5"
+        android:layout_alignStart="@+id/p5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/p6"
+        android:id="@+id/p6"
+        android:layout_below="@+id/switch5"
+        android:layout_alignLeft="@+id/switch5"
+        android:layout_alignStart="@+id/switch5"
+        android:layout_marginTop="20dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch6"
+        android:layout_below="@+id/p6"
+        android:layout_alignLeft="@+id/p6"
+        android:layout_alignStart="@+id/p6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/p7"
+        android:id="@+id/p7"
+        android:layout_below="@+id/switch6"
+        android:layout_alignLeft="@+id/switch6"
+        android:layout_alignStart="@+id/switch6"
+        android:layout_marginTop="20dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch7"
+        android:layout_below="@+id/p7"
+        android:layout_alignLeft="@+id/p7"
+        android:layout_alignStart="@+id/p7" />
+
+</RelativeLayout>
