@@ -193,8 +193,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.tabbed_view, container, false);
-            return rootView;
+            return inflater.inflate(R.layout.tabbed_view, container, false);
         }
     }
 
@@ -204,10 +203,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.pins,
+            return inflater.inflate(R.layout.pins,
                     container, false);
-            //TODO Code for setting content on the fly if needed.
-            return rootView;
         }
     }
 
@@ -217,10 +214,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.input_mon,
+            return inflater.inflate(R.layout.input_mon,
                     container, false);
-            //TODO Code for setting content on the fly if needed.
-            return rootView;
         }
     }
 
@@ -230,10 +225,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.output_mon,
+            return inflater.inflate(R.layout.output_mon,
                     container, false);
-            //TODO Code for setting content on the fly if needed.
-            return rootView;
         }
     }
 

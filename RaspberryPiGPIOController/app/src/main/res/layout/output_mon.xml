@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <TextView
         android:layout_width="wrap_content"
@@ -11,15 +15,17 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="41dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="41dp" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp" />
 
     <SeekBar
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/seek0"
         android:layout_below="@+id/p0"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -39,9 +45,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/seek1"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/p1"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignLeft="@+id/p1"
+        android:layout_alignStart="@+id/p1"
+        android:layout_alignRight="@+id/seek0"
+        android:layout_alignEnd="@+id/seek0" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -59,9 +67,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/seek2"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/p2"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignLeft="@+id/p3"
+        android:layout_alignStart="@+id/p3"
+        android:layout_alignRight="@+id/seek1"
+        android:layout_alignEnd="@+id/seek1" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -79,9 +89,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/seek3"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/p3"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignRight="@+id/seek2"
+        android:layout_alignEnd="@+id/seek2"
+        android:layout_alignLeft="@+id/p3"
+        android:layout_alignStart="@+id/p3" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -99,9 +111,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/seek4"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/p4"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignLeft="@+id/p4"
+        android:layout_alignStart="@+id/p4"
+        android:layout_alignRight="@+id/seek3"
+        android:layout_alignEnd="@+id/seek3" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -119,9 +133,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/seek5"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/p5"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignLeft="@+id/p6"
+        android:layout_alignStart="@+id/p6"
+        android:layout_alignRight="@+id/seek4"
+        android:layout_alignEnd="@+id/seek4" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -139,9 +155,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/seek6"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/p6"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignLeft="@+id/p6"
+        android:layout_alignStart="@+id/p6"
+        android:layout_alignRight="@+id/seek5"
+        android:layout_alignEnd="@+id/seek5" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -159,8 +177,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/seek7"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/p7"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignLeft="@+id/p7"
+        android:layout_alignStart="@+id/p7"
+        android:layout_alignRight="@+id/seek6"
+        android:layout_alignEnd="@+id/seek6" />
 
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
