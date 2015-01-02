@@ -27,7 +27,8 @@
         android:layout_alignLeft="@+id/p0"
         android:layout_alignStart="@+id/p0"
         android:textOn="@string/out"
-        android:textOff="@string/in" />
+        android:textOff="@string/in"
+        android:onClick="pinHandler" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,7 +49,8 @@
         android:layout_alignLeft="@+id/p1"
         android:layout_alignStart="@+id/p1"
         android:textOn="@string/out"
-        android:textOff="@string/in" />
+        android:textOff="@string/in"
+        android:onClick="pinHandler" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -69,7 +71,8 @@
         android:layout_alignLeft="@+id/p2"
         android:layout_alignStart="@+id/p2"
         android:textOn="@string/out"
-        android:textOff="@string/in" />
+        android:textOff="@string/in"
+        android:onClick="pinHandler" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -90,7 +93,8 @@
         android:layout_alignLeft="@+id/p3"
         android:layout_alignStart="@+id/p3"
         android:textOn="@string/out"
-        android:textOff="@string/in" />
+        android:textOff="@string/in"
+        android:onClick="pinHandler" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -111,7 +115,8 @@
         android:layout_alignLeft="@+id/p4"
         android:layout_alignStart="@+id/p4"
         android:textOn="@string/out"
-        android:textOff="@string/in" />
+        android:textOff="@string/in"
+        android:onClick="pinHandler" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -132,7 +137,8 @@
         android:layout_alignLeft="@+id/p5"
         android:layout_alignStart="@+id/p5"
         android:textOn="@string/out"
-        android:textOff="@string/in" />
+        android:textOff="@string/in"
+        android:onClick="pinHandler" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -153,7 +159,8 @@
         android:layout_alignLeft="@+id/p6"
         android:layout_alignStart="@+id/p6"
         android:textOn="@string/out"
-        android:textOff="@string/in" />
+        android:textOff="@string/in"
+        android:onClick="pinHandler" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -175,6 +182,7 @@
         android:layout_alignStart="@+id/p7"
         android:textOn="@string/out"
         android:textOff="@string/in"
+        android:onClick="pinHandler"
         android:layout_marginBottom="20dp" />
 
     </RelativeLayout>

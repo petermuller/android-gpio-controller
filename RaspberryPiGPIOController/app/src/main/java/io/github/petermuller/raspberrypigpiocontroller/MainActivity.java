@@ -1,20 +1,21 @@
 package io.github.petermuller.raspberrypigpiocontroller;
 
-import java.util.Locale;
-
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+import java.util.Locale;
 
 
 public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
@@ -228,6 +229,28 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             return inflater.inflate(R.layout.output_mon,
                     container, false);
         }
+    }
+
+    public void pinHandler(View v){
+        Button b = (Button)v;
+        String direction = (String)b.getText();
+        if (v == findViewById(R.id.switch0)){
+        } else if (v == findViewById(R.id.switch1)){
+        } else if (v == findViewById(R.id.switch2)){
+        } else if (v == findViewById(R.id.switch3)){
+        } else if (v == findViewById(R.id.switch4)){
+        } else if (v == findViewById(R.id.switch5)){
+        } else if (v == findViewById(R.id.switch6)){
+        } else if (v == findViewById(R.id.switch7)){
+        }
+    }
+
+    public void inputHandler(View v){
+
+    }
+
+    public void outputHandler(View v){
+
     }
 
 }
