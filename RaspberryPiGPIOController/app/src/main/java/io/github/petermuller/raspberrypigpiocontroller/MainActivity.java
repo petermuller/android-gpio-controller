@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.SeekBar;
 
 import java.util.Locale;
 
@@ -198,6 +199,9 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         }
     }
 
+    /**
+     * Creates the 'Pin Direction' tab
+     */
     public static class Pins extends Fragment{
         public Pins() {}
 
@@ -209,6 +213,9 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         }
     }
 
+    /**
+     * Creates the 'Output' tab
+     */
     public static class Input extends Fragment{
         public Input() {}
 
@@ -220,6 +227,9 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         }
     }
 
+    /**
+     * Creates the 'Input Monitor' tab
+     */
     public static class Output extends Fragment{
         public Output() {}
 
@@ -231,26 +241,69 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         }
     }
 
+    /**
+     * Handles all user interactions within pins.xml
+     * @param v The modified UI element (on/off switch)
+     */
     public void pinHandler(View v){
+        PinHandler p = new PinHandler();
         Button b = (Button)v;
         String direction = (String)b.getText();
+        int pin = 8; //invalid pin to start out. Should never hit this.
         if (v == findViewById(R.id.switch0)){
+            pin = 0;
         } else if (v == findViewById(R.id.switch1)){
+            pin = 1;
         } else if (v == findViewById(R.id.switch2)){
+            pin = 2;
         } else if (v == findViewById(R.id.switch3)){
+            pin = 3;
         } else if (v == findViewById(R.id.switch4)){
+            pin = 4;
         } else if (v == findViewById(R.id.switch5)){
+            pin = 5;
         } else if (v == findViewById(R.id.switch6)){
+            pin = 6;
         } else if (v == findViewById(R.id.switch7)){
+            pin = 7;
         }
+        p.handlePins(pin,direction);
     }
 
-    public void inputHandler(View v){
+    /**
+     * Handles all input interactions
+     * TODO figure out how to handle the input pins
+     * @param v The modified UI element (if there is one)
+     */
+    public void inputHandler(View v){}
 
-    }
-
+    /**
+     * Handles all user interactions from output_mon.xml
+     * @param v The modified UI element (SeekBar element)
+     */
     public void outputHandler(View v){
-
+        OutputHandler o = new OutputHandler();
+        SeekBar s = (SeekBar)v;
+        int val = s.getProgress();
+        int pin = 8; //invalid pin to start out. Should never hit this.
+        if (v == findViewById(R.id.seek0)) {
+            pin = 0;
+        } else if (v == findViewById(R.id.seek1)){
+            pin = 1;
+        } else if (v == findViewById(R.id.seek2)){
+            pin = 2;
+        } else if (v == findViewById(R.id.seek3)){
+            pin = 3;
+        } else if (v == findViewById(R.id.seek4)){
+            pin = 4;
+        } else if (v == findViewById(R.id.seek5)){
+            pin = 5;
+        } else if (v == findViewById(R.id.seek6)){
+            pin = 6;
+        } else if (v == findViewById(R.id.seek7)){
+            pin = 7;
+        }
+        o.handleOutput(pin,val);
     }
 
 }
