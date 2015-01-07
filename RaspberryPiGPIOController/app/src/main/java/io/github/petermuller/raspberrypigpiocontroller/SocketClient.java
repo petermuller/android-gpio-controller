@@ -25,9 +25,15 @@ public class SocketClient {
 
     public SocketClient() {}
     public SocketClient(String dest, int port) throws UnknownHostException, IOException{
+        char[] reply = new char[10];
         s = new Socket(dest,port);
         out = new PrintWriter(s.getOutputStream(),true);
         in = new BufferedReader(new InputStreamReader(s.getInputStream()));
+        out.print("Testing!");
+        in.read(reply);
+        //if (!(reply.toString() == "yes!!")){
+        //    throw new IOException("Connection not established");
+        //} //Else success!
     }
 
     public void sendMessage(String message){

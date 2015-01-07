@@ -343,6 +343,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
     public void loginHandler(View v){
         String addr = ((EditText)findViewById(R.id.address)).getText().toString();
         int port = Integer.parseInt(((EditText) findViewById(R.id.port)).getText().toString());
+        System.out.println(addr + " " + Integer.toString(port));
         try {
             sc = new SocketClient(addr, port);
         } catch (UnknownHostException e){
