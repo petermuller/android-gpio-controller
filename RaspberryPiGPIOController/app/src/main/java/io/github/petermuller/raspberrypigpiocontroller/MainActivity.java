@@ -14,12 +14,22 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.SeekBar;
 
+import java.io.IOException;
+import java.net.UnknownHostException;
 import java.util.Locale;
 
 
 public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
+
+    /**
+     * Socket client for communication with the phone server.
+     * Does not need multiple instances. It gets passed into
+     * each different handler's class.
+     */
+    private SocketClient sc = null;
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -131,12 +141,15 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             Fragment frag;
             switch (position){
                 case 0:
-                    frag = new Pins();
+                    frag = new Login();
                     break;
                 case 1:
-                    frag = new Output();
+                    frag = new Pins();
                     break;
                 case 2:
+                    frag = new Output();
+                    break;
+                case 3:
                     frag = new Input();
                     break;
                 default:
@@ -148,8 +161,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            // Show 4 total pages.
+            return 4;
         }
 
         @Override
@@ -157,10 +170,12 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             Locale l = Locale.getDefault();
             switch (position) {
                 case 0:
-                    return getString(R.string.title_section1).toUpperCase(l);
+                    return getString(R.string.title_section0).toUpperCase(l);
                 case 1:
-                    return getString(R.string.title_section2).toUpperCase(l);
+                    return getString(R.string.title_section1).toUpperCase(l);
                 case 2:
+                    return getString(R.string.title_section2).toUpperCase(l);
+                case 3:
                     return getString(R.string.title_section3).toUpperCase(l);
             }
             return null;
@@ -196,6 +211,20 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             return inflater.inflate(R.layout.tabbed_view, container, false);
+        }
+    }
+
+    /**
+     * Creates the 'Connection' tab
+     */
+    public static class Login extends Fragment{
+        public Login() {}
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            return inflater.inflate(R.layout.login_screen,
+                    container, false);
         }
     }
 
@@ -246,7 +275,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
      * @param v The modified UI element (on/off switch)
      */
     public void pinHandler(View v){
-        PinHandler p = new PinHandler();
+        PinHandler p = new PinHandler(sc);
         Button b = (Button)v;
         String direction = (String)b.getText();
         int pin = 8; //invalid pin to start out. Should never hit this.
@@ -282,7 +311,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
      * @param v The modified UI element (SeekBar element)
      */
     public void outputHandler(View v){
-        OutputHandler o = new OutputHandler();
+        OutputHandler o = new OutputHandler(sc);
         SeekBar s = (SeekBar)v;
         int val = s.getProgress();
         int pin = 8; //invalid pin to start out. Should never hit this.
@@ -304,6 +333,24 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             pin = 7;
         }
         o.handleOutput(pin,val);
+    }
+
+    /**
+     * Handles all user interactions from output_mon.xml
+     * Sets the SocketClient variable for using with other methods
+     * @param v The modified UI element (submit button)
+     */
+    public void loginHandler(View v){
+        String addr = ((EditText)findViewById(R.id.address)).getText().toString();
+        int port = Integer.parseInt(((EditText) findViewById(R.id.port)).getText().toString());
+        try {
+            sc = new SocketClient(addr, port);
+        } catch (UnknownHostException e){
+            //TODO handle UnknownHostException
+        } catch (IOException e){
+            //TODO handle IOException
+        }
+        //SocketClient sc is now set if no exceptions!
     }
 
 }

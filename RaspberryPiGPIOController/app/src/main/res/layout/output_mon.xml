@@ -40,7 +40,8 @@
         android:layout_alignEnd="@+id/p0"
         android:layout_below="@+id/seek0"
         android:layout_alignLeft="@+id/p0"
-        android:layout_alignStart="@+id/p0" />
+        android:layout_alignStart="@+id/p0"
+        android:layout_marginTop="20dp" />
 
     <SeekBar
         android:layout_width="fill_parent"
@@ -63,7 +64,8 @@
         android:layout_alignEnd="@+id/p1"
         android:layout_below="@+id/seek1"
         android:layout_alignLeft="@+id/p1"
-        android:layout_alignStart="@+id/p1" />
+        android:layout_alignStart="@+id/p1"
+        android:layout_marginTop="20dp" />
 
     <SeekBar
         android:layout_width="fill_parent"
@@ -86,7 +88,8 @@
         android:layout_alignEnd="@+id/p2"
         android:layout_below="@+id/seek2"
         android:layout_alignLeft="@+id/p2"
-        android:layout_alignStart="@+id/p2" />
+        android:layout_alignStart="@+id/p2"
+        android:layout_marginTop="20dp" />
 
     <SeekBar
         android:layout_width="fill_parent"
@@ -109,7 +112,8 @@
         android:layout_alignEnd="@+id/p3"
         android:layout_below="@+id/seek3"
         android:layout_alignLeft="@+id/p3"
-        android:layout_alignStart="@+id/p3" />
+        android:layout_alignStart="@+id/p3"
+        android:layout_marginTop="20dp" />
 
     <SeekBar
         android:layout_width="fill_parent"
@@ -132,7 +136,8 @@
         android:layout_alignEnd="@+id/p4"
         android:layout_below="@+id/seek4"
         android:layout_alignLeft="@+id/p4"
-        android:layout_alignStart="@+id/p4" />
+        android:layout_alignStart="@+id/p4"
+        android:layout_marginTop="20dp" />
 
     <SeekBar
         android:layout_width="fill_parent"
@@ -155,7 +160,8 @@
         android:layout_alignEnd="@+id/p5"
         android:layout_below="@+id/seek5"
         android:layout_alignLeft="@+id/p5"
-        android:layout_alignStart="@+id/p5" />
+        android:layout_alignStart="@+id/p5"
+        android:layout_marginTop="20dp" />
 
     <SeekBar
         android:layout_width="fill_parent"
@@ -178,7 +184,8 @@
         android:layout_alignEnd="@+id/p6"
         android:layout_below="@+id/seek6"
         android:layout_alignLeft="@+id/p6"
-        android:layout_alignStart="@+id/p6" />
+        android:layout_alignStart="@+id/p6"
+        android:layout_marginTop="20dp" />
 
     <SeekBar
         android:layout_width="fill_parent"

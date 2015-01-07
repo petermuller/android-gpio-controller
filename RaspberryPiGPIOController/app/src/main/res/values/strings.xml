@@ -3,6 +3,7 @@
 
     <string name="app_name">Raspberry Pi GPIO Controller</string>
 
+    <string name="title_section0">Connection</string>
     <string name="title_section1">Pin Direction</string>
     <string name="title_section2">Output</string>
     <string name="title_section3">Input Monitor</string>
@@ -10,6 +11,7 @@
     <string name="address">IP or Web Address</string>
     <string name="port">Port Number</string>
     <string name="connect">Connect!</string>
+    <string name="default_port">9001</string>
 
     <string name="p0">Pin 1</string>
     <string name="p1">Pin 2</string>

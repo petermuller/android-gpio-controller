@@ -3,35 +3,39 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/address"
-        android:layout_marginTop="139dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:inputType="textUri"
-        android:text="@string/address"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:hint="@string/address" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/port"
         android:layout_below="@+id/address"
-        android:text="@string/port"
         android:layout_alignRight="@+id/address"
         android:layout_alignEnd="@+id/address"
         android:layout_alignLeft="@+id/address"
-        android:layout_alignStart="@+id/address" />
+        android:layout_alignStart="@+id/address"
+        android:hint="@string/port"
+        android:text="@string/default_port"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/connect"
-        android:id="@+id/button"
-        android:layout_below="@+id/editText"
+        android:id="@+id/connectButton"
+        android:layout_below="@+id/port"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp" />
+        android:layout_marginTop="90dp"
+        android:onClick="loginHandler"/>
 
 </RelativeLayout>
